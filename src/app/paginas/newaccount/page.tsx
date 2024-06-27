@@ -4,43 +4,48 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
+import Header from '@/app/componente/header_footer/header';
+import Footer from '@/app/componente/header_footer/footer';
 
 export default function NewAccount() {
 	return (
-		<main >
-			<Form>
-				<Row className="mb-3">
-					<Form.Group className="mb-3" controlId="formNombre">
-						<Form.Label>Nombre</Form.Label>
-						<Form.Control placeholder="Nombre completo" />
+		< >
+			<Header />
+			<div className='color'>
+				<Form className='margenes'>
+					<Row className="mb-3">
+						<Form.Group className="mb-3" controlId="formNombre">
+							<Form.Label>Nombre</Form.Label>
+							<Form.Control placeholder="Nombre completo" />
+						</Form.Group>
+
+						<Form.Group as={Col} controlId="formEmail">
+							<Form.Label>Correo</Form.Label>
+							<Form.Control type="email" placeholder="Enter email" />
+						</Form.Group>
+
+						<Form.Group as={Col} controlId="formPassword">
+							<Form.Label>Contraceña</Form.Label>
+							<Form.Control type="password" placeholder="Contraceña" />
+						</Form.Group>
+
+						<Form.Group as={Col} controlId="formPassword2">
+							<Form.Label>Repite Contraceña</Form.Label>
+							<Form.Control type="password" placeholder="Contraceña" />
+						</Form.Group>
+					</Row>
+
+					<Form.Group className="mb-3" controlId="formDireccion">
+						<Form.Label>Direccion</Form.Label>
+						<Form.Control placeholder="calle altura." />
 					</Form.Group>
 
-					<Form.Group as={Col} controlId="formEmail">
-						<Form.Label>Correo</Form.Label>
-						<Form.Control type="email" placeholder="Enter email" />
-					</Form.Group>
-
-					<Form.Group as={Col} controlId="formPassword">
-						<Form.Label>Contraceña</Form.Label>
-						<Form.Control type="password" placeholder="Contraceña" />
-					</Form.Group>
-
-					<Form.Group as={Col} controlId="formPassword2">
-						<Form.Label>Repite Contraceña</Form.Label>
-						<Form.Control type="password" placeholder="Contraceña" />
-					</Form.Group>
-				</Row>
-
-				<Form.Group className="mb-3" controlId="formDireccion">
-					<Form.Label>Direccion</Form.Label>
-					<Form.Control placeholder="calle altura." />
-				</Form.Group>
-
-				<Button variant="primary" type="submit">
-					Registrar
-				</Button>
-			</Form>
-
-		</main>
+					<Button variant="primary" type="submit">
+						Registrar
+					</Button>
+				</Form>
+			</div>
+			<Footer />
+		</>
 	);
 }

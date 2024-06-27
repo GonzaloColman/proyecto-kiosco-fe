@@ -16,3 +16,19 @@ footer {
   height: 60px;
   background-color: rgb(189, 101, 93);
 }
+
+.color{
+  background-color: rgb(243, 218, 188);
+}
+
+.margenes {
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: rgb(243, 218, 188);
+}
+
+.margenes_login{
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: rgb(243, 218, 188);
+}
