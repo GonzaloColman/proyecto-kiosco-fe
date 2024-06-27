@@ -8,8 +8,6 @@ export default function Header() {
 			<div className='titulo'>
 				<h1>Kiosco</h1>
 				<h4>venta y organizacion de stock</h4>
-				<Button href="/paginas/login"  variant="outline-success">Iniciar Secion</Button>
-				<Button  href="/paginas/newaccount" variant="outline-info">Crear Usuario</Button>
 			</div>
 		</div>
 	);
