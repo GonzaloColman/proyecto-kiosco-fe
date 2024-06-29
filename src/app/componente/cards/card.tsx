@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 
-export const Tarjeta = (props: Celular) => {
+export const ProductosCard = (props: Productos) => {
 	const { Nombre, Descripcion, Stock, Precio} = props;
 	const { id, setId } = useContext(IdContext); // Usa IdContext aquí
 
