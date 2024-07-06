@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Productos } from '../interface/productos';
 
 export const ProductosCard = (props: Productos) => {
 	const { Nombre, Descripcion, Stock, Precio} = props;
