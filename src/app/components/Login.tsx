@@ -57,6 +57,7 @@ export const Login = () => {
     setRegister(val == 'register');
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const cargarUsuarioLogueado = async () => {
     try {
     const userData = await getInformacionUsuario();
@@ -78,7 +79,7 @@ export const Login = () => {
     } else {
       setShowLogin(true);
     }
-  }, []);
+  }, [cargarUsuarioLogueado]);
 
   return (
       <div className="d-flex justify-content-center align-items-center vh-100">
