@@ -1,9 +1,11 @@
-import PageInicio from "./paginas/inicio/page";
+import Image from "next/image";
+import styles from "./page.module.css";
+import { Login } from "./components/Login";
 
 export default function Home() {
-	return (
-		<>
-			<PageInicio />
-		</>
-	);
+  return (
+    <main className={styles.main}>
+      <Login/>
+    </main>
+  );
 }
